@@ -1,0 +1,12 @@
+{
+  "name": "kvg-custom-formatter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npm run clone-kvg && npm run format",
+    "clone-kvg": "git clone -n --depth=1 --filter=tree:0 https://github.com/KanjiVG/kanjivg && cd kanjivg && git sparse-checkout set --no-cone kanji && git checkout",
+    "format": "node formatter.mjs"
+  },
+  "author": "z16th",
+  "license": "MIT"
+}
