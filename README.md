@@ -6,7 +6,8 @@ The original format can cause some trouble when processing svg files with tools 
 
 The proposed format replaces `kvg:*` attributes with [`data-*` attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).
 
-For further optimization you can install and use [svgo](https://github.com/svg/svgo). Just run `svgo ./kanjivg/formatted` to overwrite the output files.
+~~For further optimization you can install and use [svgo](https://github.com/svg/svgo). Just run `svgo ./kanjivg/formatted` to overwrite the output files.~~
+⚠️ Default svgo optimization will join some strokes into a single path making animations less acurate, so I wouldn't recommend it.
 
 ## Commands
 
